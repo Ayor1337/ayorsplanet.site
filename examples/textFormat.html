@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>文本格式属性</title>
+</head>
+
+<body>
+<a href="../index.html" target="_self">返回</a>
+
+
+<!--  对标题的设置-->
+  <h1>1级标题</h1>
+  <h2>2级标题</h2>
+  <h3>3级标题</h3>
+  <h5>5级标题</h5>
+  <p>以此类推标题级别越大字越大</p>
+<hr>
+
+  <h1 align="center">一级标题居中</h1>
+  <h2 align="left">二级标题居左</h2>
+  <h3 align="right">三级标题居右</h3>
+  <p>对齐关键字 align="left/center/right" </p>
+<hr>
+
+<!--对文本的属性设置 即使编译器提示这个已经被废弃了但是还是要背下来 -->
+  <font face="宋体">这是一个宋体文本</font><br>
+  <font face="楷书">这是一个楷书文本</font><br>
+  <font size="26px">这是一个26px的文本</font><br>
+  <font size="+10">这是一个比默认大10px的文本</font><br>
+  <font color="blue">这是一个蓝色文本</font><br>
+  <font color="aqua">这是一个青色文本</font><br>
+<hr>
+
+
+  <font>这是一个<sup>上标</sup></font> <br>
+  <font>这是一个<sub>下标</sub></font>
+<hr>
+
+  <strike>这是一段被删除的文本</strike> <br>
+  <code>This is a fixed width text</code><br>
+  <samp>This is also a fixed width text</samp><br>
+<hr>
+
+<!--特殊符号-->
+  <text>&nbsp等价于 | nbsp等价于一个半角空格;</text> <br>
+  <text>&quot等价于" | quot等价于一个引号;</text> <br>
+  <text>&lt等价于< | lt等价于一个左尖括号;</text> <br>
+  <text>&gt等价于 | rt等价于一个右尖括号格;</text> <br>
+  <text size="10px">以此类推还有很多，都要以&开头</text><br>
+<hr>
+
+<!--段落设置-->
+  <p>&lt;p&gt;表示段落</p>
+  也可以在段落结尾加上&lt;p&gt;来分段落<p>
+  &lt;br&gt;表示换行<br>
+  &lt;nobr&gt;表示不换行<br>
+  <pre>这是
+          保留原
+                    排版方式</pre>
+  <center>&lt;center&gt;标记用来居中文字，同样被CSS替代</center>
+  <blockquote>&lt;blockquote&gt;向右缩进标记</blockquote>
+  &lt;hr&gt;添加水平线 通过width, size可以设置长宽 align设置对齐 color设置颜色 noshade去掉水平线阴影等
+<hr>
+
+<!--其他文字标记-->
+  <ruby>这是一段&lt;ruby&gt;文字<rt>使用&lt;rt&gt;注释</rt></ruby><br>
+  <var>变量</var>
+  <address>This is a address</address>
+
+</body>
+
+</html>

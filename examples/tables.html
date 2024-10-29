@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>表格的应用</title>
+
+    <style type="text/css">
+        .sub-title {
+            font-size: 28px;
+            line-height: 2px;
+        }
+        .table-style {
+            table {
+                width: 400px;
+                border-collapse: collapse;
+
+            }
+            table, table td, table th {
+                background-color: aqua;
+                border: 1px solid yellowgreen;
+            }
+            table th {
+                background-color: yellow;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <a href="../index.html" target="_self">返回</a>
+    <p class="sub-title">表格的语法</p>
+    <pre>
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;内容&lt;/td&gt;
+            &lt;td&gt;内容&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </pre>
+    <table>
+        <tr>
+            <td>第一行.第一列</td>
+            <td>第一行.第二列</td>
+        </tr>
+        <tr>
+            <td>第二行.第一列</td>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+
+    <p class="sub-title">表格的标题</p>
+    <table>
+        <caption>这是标题&lt;caption&gt;</caption>
+        <tr>
+            <td>第一行.第一列</td>
+            <td>第一行.第二列</td>
+        </tr>
+        <tr>
+            <td>第二行.第一列</td>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+
+    <p class="sub-title">表格的表头</p>
+    <table>
+        <tr>
+            <th>列1 &lt;th&gt;</th>
+            <th>列2 &lt;th&gt;</th>
+        </tr>
+        <tr>
+            <td>第一行.第一列</td>
+            <td>第一行.第二列</td>
+        </tr>
+        <tr>
+            <td>第二行.第一列</td>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+
+    <p class="sub-title">表格的列宽, 高度</p>
+    <table width="20%" height="100">
+        <tr>
+            <td>第一行.第一列</td>
+            <td>第一行.第二列</td>
+        </tr>
+        <tr>
+            <td>第二行.第一列</td>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+
+    <p class="sub-title">表格的对齐方式</p>
+    <table align="center">
+        <caption>居中对齐</caption>
+        <tr>
+            <td>第一行.第一列</td>
+            <td>第一行.第二列</td>
+        </tr>
+        <tr>
+            <td>第二行.第一列</td>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+
+    <p class="sub-title" style="text-decoration-line: line-through">表格的边框样式 (书上用不了，只能用CSS)</p>
+    <div class="table-style">
+    <table>
+        <tr>
+            <th>第一列</th>
+            <th>第二列</th>
+        </tr>
+        <tr>
+            <td>&lt;border&gt;设置边框</td>
+            <td>&lt;bordercolor&gt;设置边框颜色</td>
+        </tr>
+        <tr>
+            <td>第二行.第一列</td>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+    </div>
+
+    <p class="sub-title">行文字的水平对齐方式&lt;align&gt;</p>
+    <table width="250" border="1px">
+        <tr>
+            <td>align 水平对齐</td>
+            <td>valign 垂直对齐</td>
+        </tr>
+        <tr align="right">
+            <td>第二行.第一列</td>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+    <hr>
+
+    <p class="sub-title">调整单元格属性</p>
+    <table border="1px">
+        <tr>
+            <td width="140" height="120">第一行.第一列</td>
+            <td>第一行.第二列</td>
+        </tr>
+        <tr>
+            <td>第二行.第一列</td>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+
+    <p class="sub-title">调整单元格水平跨度</p>
+    <table border="1px">
+        <tr>
+            <td colspan="2" align="center">第一行.第一列</td>
+
+        </tr>
+        <tr>
+            <td>第二行.第一列</td>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+
+    <p class="sub-title">调整单元格垂直跨度</p>
+    <table border="1px">
+        <tr>
+            <td rowspan="4" align="center">第一行.第一列</td>
+
+        </tr>
+        <tr>
+            <td>第一行.第二列</td>
+        </tr>
+        <tr>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+    <hr>
+
+    <p class="sub-title">表格的结构</p>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>列1</th>
+                <th>列2</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>第一行.第一列</td>
+            <td>第一行.第二列</td>
+        </tr>
+        <tr>
+            <td>第二行.第一列</td>
+            <td>第二行.第二列</td>
+        </tr>
+    </table>
+
+    <p class="sub-title">表格的主体标记</p>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>列1</th>
+                <th>列2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>第一行.第一列</td>
+                <td>第一行.第二列</td>
+            </tr>
+            <tr>
+                <td>第二行.第一列</td>
+                <td>第二行.第二列</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" align="right">注释</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

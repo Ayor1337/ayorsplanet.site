@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用图像</title>
+    <style type="text/css">
+        .sub-title {
+            font-size: 28px;
+            line-height: 2px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" target="_self">返回</a>
+    <p class="sub-title">图像的语法</p>
+    &lt;img src="图像文件的地址"&gt;<br>
+    <img src="/images/Steins;gate.jpg" alt="命运石之门" width="20%" height="20%">
+
+    <hr>
+
+    <p class="sub-title">图片的属性设置</p>
+    width设置宽度 height设置高度 border设置边框 hspace图像水平间距 v
+    space图像垂直间距 align相对于文字基准线的对齐方式 title 图片标题<br>
+    <img src="/images/Steins;Gate_cover_art.jpg" alt="命运石之门" width="250" height="358">
+    <img src="/images/Chaos;Child_cover.png" alt="混沌之子" border="5px">
+    <img src="/images/Persona_5_cover_art.jpg" alt="女神异闻录5" hspace="20px">
+    <img src="/images/Shin_Megami_Tensei_Persona_4.jpg" alt="女神异闻录4" align="right"><br>
+    <ul>
+        图像相对文字的对齐方式
+        <li>top 顶端对齐</li>
+        <li>middle 中部对齐</li>
+        <li>bottom 底端对齐</li>
+        <li>texttop 同行中文本顶部对齐</li>
+        <li>absmiddle 同行中最大项对齐</li>
+        <li>baseline 基线对齐</li>
+        <li>absbottom 底部和同行中的最低项对齐</li>
+        <li>left 与左边界对齐</li>
+        <li>right 与右边界对齐</li>
+    </ul>
+    <img src="/images/Chaos_Head_game_cover.jpg" alt="混沌脑" vspace="20">
+    <hr>
+
+    <p class="sub-title">图片超链接</p>
+    语法<br>
+    &lt;a href="链接地址"&gt;&lt;img src="图像URL"&gt;&lt;/a&gt;<br>
+    <a href="https://store.steampowered.com/app/658620/Wonderful_Everyday_Down_the_RabbitHole/" target="_blank">
+        <img src="/images/Wonder_everyday_down_the_rabbit_hole.jpg" alt="素晴日" style="height: 20%; width: 20%">
+    </a> <br>
+    图片的热区设置 <br>
+    &lt;img src="图像URL" usemap="映射图像名称"&gt;&lt;/a&gt;<br>
+    <pre>
+        &lt;map name="映射图像名称"&gt;
+            &lt;area shape="热区形状" coords="热区坐标" href="链接地址" /&gt;
+        &lt;/map&gt;
+    </pre>
+    <hr>
+
+
+</body>
+
+</html>
