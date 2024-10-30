@@ -3,11 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <style type="text/css">
+        body {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-<form>
-    账号 : <input name="" type=text />
-    密码 : <input >
-</form>
+    <h1>网页注册</h1>
+    <form action="mail;ayor1337@qq.com" method="get">
+        姓名: <input name="" type=text /> <br /> <br />
+        密码: <input name="" type="url" size="20" maxlength="50" value="http://">
+        <hr>
+    </form>
+
+    <h1>用户调查</h1>
+    <form action="">
+        用户名: <input type="text" size="23" max="50"> <br/> <br/>
+        密码: <input type="password" size="25" oncopy="return false" oncut="return false"> <br> <br>
+        确认密码: <input type="password" size="20" oncopy="return false" oncut="return false">
+    </form>
+    <hr>
+    
+    <h1>单选按钮</h1>
+    <form>
+        <input type="radio" value="answerA"> 选项A <br>
+        <input type="radio" value="answerB"> 选项B <br>
+        <input type="radio" value="answerC"> 选项C <br>
+        <input type="radio" value="answerD"> 选项D
+    </form>
+    <hr>
+
+    <h1>复选框</h1>
+    <form>
+        <input type="checkbox" value="answerA"> 选项A <br>
+        <input type="checkbox" value="answerB"> 选项B <br>
+        <input type="checkbox" value="answerC"> 选项C <br>
+        <input type="checkbox" value="answerD"> 选项D
+    </form>
+    <hr>
+
+    <h1>普通按钮</h1>
+    <form>
+        <input type="button" value="普通按钮">
+        <input type="button" value="关闭当前窗口" onclick="window.close()">
+        <input type="button" value="打开首页" onclick="window.open('../index.html', '_blank')">
+    </form>
+    <hr>
+
+    <h1>提交按钮</h1>
+    <form action="mailto:ayor1337@qq.com" method="post" enctype="text/plain">
+        你喜欢的音乐 <br>
+        <input type="radio" value="rock">摇滚 <br>
+        <input type="radio" value="jazz">爵士 <br>
+        <input type="radio" value="pop">流行 <br>
+        <input type="submit" value="提交表单">
+    </form>
+    <hr>
+
+    <h1>重置按钮</h1>
+    <form action="mailto:ayor1337@qq.com" method="post" enctype="text/plain">
+        你喜欢的音乐 <br>
+        <input type="radio" value="rock">摇滚 <br>
+        <input type="radio" value="jazz">爵士 <br>
+        <input type="radio" value="pop">流行 <br>
+        <input type="submit" value="提交表单">
+        <input type="reset" value="重置">
+    </form>
+    <hr>
+
+    <form action="mailto:ayor1337@qq.com" method="post" enctype="text/plain">
+        你喜欢的音乐 <br>
+        <input type="file" value="mp3"><br>
+        <input type="submit" value="提交表单">
+    </form>
+
+    <input type="button" value="Hello World" onclick="hello()">
+
+    <script src="/scripts/index.js">
+    </script>
 </body>
 </html>
