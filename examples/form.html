@@ -78,8 +78,39 @@
         <input type="file" value="mp3"><br>
         <input type="submit" value="提交表单">
     </form>
-
     <input type="button" value="Hello World" onclick="hello()">
+
+    <hr>
+    <h1>使用 label 定义标签</h1>
+    <form>
+        <label for="username">用户名：</label>
+        <input name="username" id="username" type=text /> <br /> <br />
+        <label for="password">密码：</label>
+        <input name="password" id="password" type="url" size="20" maxlength="50" value="http://">
+    </form>
+    <hr>
+    <h1>下拉列表</h1>
+    <div style="padding-bottom: 50px">
+        <label for="select-singers">你喜欢的歌手</label>
+        <select name="" id="select-singers" size="3" multiple="multiple">
+            <option value="sec1">Vaundy</option>
+            <option value="sec2" selected="selected">One Republic</option>
+            <option value="sec3">One Ok Rock</option>
+            <option value="sec4">YOASOBI</option>
+            <option value="sec5">Creepy Nuts</option>
+            <option value="sec6">RADWIMPS</option>
+        </select>
+        <label for="sel">2</label>
+        <select name="" id="sel" >
+            <option value="sec1">Vaundy</option>
+            <option value="sec2">One Republic</option>
+            <option value="sec3">One Ok Rock</option>
+        </select>
+    </div>
+    <hr>
+    <h1>文本域标记</h1>
+    <label for="message">为什么</label>
+    <textarea name="message" id="message" cols="40" rows="3"></textarea>
 
     <script src="/scripts/index.js">
     </script>
